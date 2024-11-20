@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP & Arte - Artigos Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>AP & Arte - Artigos Personalizados</h1>
+            <div class="banner-container">
+                <!-- Verifique se o arquivo "banner.jpg" está na pasta correta -->
+                <img src="banner.jpg" alt="Banner da loja">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="javascript:void(0);" id="cartIcon">Carrinho (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo à AP & Arte</h2>
+            <p>Aqui você encontra artigos personalizados para todas as ocasiões!</p>
+        </section>
+    </main>
+
+    <!-- Carrinho de Compras Popup -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <div id="cartItems"></div> <!-- Lista de itens do carrinho -->
+            <div>
+                <p>Total: €<span id="cartTotal">0</span></p> <!-- Total dinâmico do carrinho -->
+                <button id="checkoutButton">Finalizar Compra</button> <!-- Ação para finalizar a compra (em desenvolvimento) -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AP & Arte - Artigos Personalizados. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Certifique-se de que o scripts.js está configurado corretamente -->
+</body>
+</html>
